@@ -1,1 +1,1 @@
-Developed and implemented a machine learning model to predict diabetes risk based on patient data. </br>The project leveraged linear regression for early diagnosis, analyzing key features like glucose levels, BMI, age, and blood pressure.
+Developed an AI model to predict diabetes risk using Logistic Regression. <br/> The model was built to process clinical data such as glucose levels, BMI, and age, enabling early detection of diabetes.
