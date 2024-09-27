@@ -1,2 +1,1 @@
-# Diabetic-Prediction
-Developed a web application which will predict diabetic on the basis of 8 parameters.
+Developed and implemented a machine learning model to predict diabetes risk based on patient data. </br>The project leveraged linear regression for early diagnosis, analyzing key features like glucose levels, BMI, age, and blood pressure.
