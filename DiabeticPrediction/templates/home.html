@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Prediction System</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetic Prediction System</h1>
+        <p>Please enter the details below to predict diabetes:</p>
+        
+        <form action="result" method="GET">
+            {% if pred_result %}
+            <div class="result">
+                <h2>Prediction Result</h2>
+                <p>The prediction result is: <strong>{{ pred_result }}</strong></p>
+            </div>
+            {% endif %}
+            
+            <div class="form-row">
+                <label for="pregnancies">Pregnancies</label>
+                <input type="number" id="pregnancies" name="pregnancies" required>
+            </div>
+
+            <div class="form-row">
+                <label for="glucose">Glucose Level</label>
+                <input type="number" id="glucose" name="glucose" required>
+            </div>
+
+            <div class="form-row">
+                <label for="bloodPressure">Blood Pressure</label>
+                <input type="number" id="bloodPressure" name="bloodPressure" required>
+            </div>
+
+            <div class="form-row">
+                <label for="skinThickness">Skin Thickness</label>
+                <input type="number" id="skinThickness" name="skinThickness" required>
+            </div>
+
+            <div class="form-row">
+                <label for="insulin">Insulin</label>
+                <input type="number" id="insulin" name="insulin" required>
+            </div>
+
+            <div class="form-row">
+                <label for="bmi">BMI</label>
+                <input type="number" step="0.01" id="bmi" name="bmi" required>
+            </div>
+
+            <div class="form-row">
+                <label for="diabetesPedigreeFunction">Diabetes Pedigree Function</label>
+                <input type="number" step="0.001" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction" required>
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <p>Design & Coded by Shivanshu</p>
+    </footer>
+</body>
+</html>
